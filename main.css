@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -11,6 +10,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 header {
   background-color: var(--color-secondary);
@@ -178,25 +178,25 @@ hr {
 
 .count-container {
   flex-wrap: wrap;
-  width: 300px;
-  height: 220px;
+  width: 22%;
+  height: 15%;
   background-color: var(--color-secondary);
   padding: 30px;
+
   border-top-left-radius: 60px;
   box-shadow: 3px 3px 3px rgba(103, 103, 103, 0.2);
   margin: 15px 5px;
 }
 
-.counter:first-child {
+/* .counter:first-child {
   padding-top: 50px;
   padding-bottom: 50px;
-}
+} */
 
 .count-dogovori,
 .count-premija,
 .count-zivotno {
-  margin-top: 10px;
-  margin-bottom: 0;
+  margin: 0 auto;
   padding-bottom: 0;
   font-size: 60px;
   color: var(--color-primary);
@@ -513,8 +513,8 @@ article {
 }
 
 .zasto-broker__pricini {
-  width: 310px;
-  height: 300px;
+  width: 22%;
+  height: 250px;
   background: var(--color-secondary);
   border-top-left-radius: 60px;
   position: relative;
@@ -1138,7 +1138,6 @@ footer {
   }
 
   .zasto-broker__pricini {
-    width: 250px;
     height: 320px;
   }
 
@@ -1255,10 +1254,6 @@ footer {
   .naslovna-uslugi {
     width: 290px;
     height: 700px;
-  }
-  .zasto-broker__pricini {
-    width: 220px;
-    height: 320px;
   }
 
   .zasto-broker__pricini p {
@@ -1388,7 +1383,7 @@ footer {
     font-size: 16px;
   }
   .zasto-broker__pricini {
-    width: 335px;
+    width: 40%;
     height: 180px;
   }
 
@@ -1744,7 +1739,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   section {
-    padding: 2rem 0.9rem;
+    padding: 2rem 0rem;
   }
 
   #main {

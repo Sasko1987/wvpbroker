@@ -11,7 +11,6 @@
 body {
   margin: 0;
   padding: 0;
-
 }
 header {
   background-color: var(--color-secondary);
@@ -33,7 +32,7 @@ section {
   padding: 4.3rem 2rem;
 }
 
-.logo{
+.logo {
   width: 150px;
 }
 
@@ -55,7 +54,8 @@ section {
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
-  padding-right: 10px;
+
+  padding-left: 0;
   font-weight: bold;
 }
 
@@ -402,7 +402,7 @@ i {
   text-align: center;
   position: relative;
   overflow: hidden;
-  padding: 0 2rem
+  padding: 0 2rem;
 }
 
 .naslovna-partneri {

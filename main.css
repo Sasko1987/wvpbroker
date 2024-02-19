@@ -139,8 +139,6 @@ hr {
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-
-  /* position: relative; */
 }
 
 .main-tekst {
@@ -154,7 +152,6 @@ hr {
   font-size: 60px;
   text-align: center;
   font-weight: 900;
-  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.6);
   animation: vfp-logo 2s ease-in;
 }
 
@@ -186,8 +183,8 @@ hr {
   background-color: var(--color-secondary);
   padding: 30px;
   border-top-left-radius: 60px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  margin: 15px;
+  box-shadow: 3px 3px 3px rgba(103, 103, 103, 0.2);
+  margin: 15px 5px;
 }
 
 .counter:first-child {
@@ -294,7 +291,7 @@ hr {
   backdrop-filter: blur(1px);
   width: 350px;
   height: 500px;
-  box-shadow: 3px 5px 5px grey;
+  /* box-shadow: 3px 5px 5px grey; */
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -337,7 +334,6 @@ i {
   background: white;
   font-size: 14px;
   font-weight: 600;
-  box-shadow: 5px 5px 5px gray;
   margin-bottom: 20px;
   transition: all 500ms ease;
 }
@@ -346,7 +342,6 @@ i {
   background-color: var(--color-primary);
   color: white;
   border: none;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   transition: 500ms ease;
   cursor: pointer;
   transform: scale(1.1);
@@ -523,7 +518,7 @@ article {
   background: var(--color-secondary);
   border-top-left-radius: 60px;
   position: relative;
-  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px rgba(103, 103, 103, 0.2);
   transition: all 100ms ease;
   margin: 30px 10px;
 }
@@ -533,10 +528,9 @@ article {
 }
 
 .zasto-broker__pricini p {
-  margin-top: auto;
-  margin-bottom: auto;
+  /* margin: auto; */
   font-size: 20px;
-  padding: 80px 40px 40px 40px;
+  padding: 40px;
 }
 
 .ikoni-broker {
@@ -1395,7 +1389,7 @@ footer {
   }
   .zasto-broker__pricini {
     width: 335px;
-    height: 250px;
+    height: 180px;
   }
 
   .prasanja {
@@ -1750,7 +1744,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   section {
-    padding: 2rem 0;
+    padding: 2rem 0.9rem;
   }
 
   #main {
@@ -1793,12 +1787,9 @@ footer {
     width: 100%;
     height: 150px;
     border-radius: 15px;
-    margin: 15px 30px;
+    margin: 15px;
   }
 
-  .zasto-broker__pricini p {
-    padding-top: 60px;
-  }
   .prasanja {
     width: 380px;
   }
@@ -1851,6 +1842,9 @@ footer {
     width: 90%;
   }
 
+  #naslovna-uslugi {
+    background-position: left;
+  }
   .banka,
   .smetka {
     line-height: 10px;

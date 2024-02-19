@@ -161,7 +161,7 @@ hr {
 }
 
 #naslovna-counter {
-  background-color: white;
+  background-color: var(--color-secondary);
   margin-top: 0;
   position: relative;
 }
@@ -170,32 +170,25 @@ hr {
   color: white;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   text-align: center;
-  position: absolute;
+  /* position: absolute; */
   bottom: 30px;
   right: 0;
 }
 
 .count-container {
   flex-wrap: wrap;
-  width: 22%;
-  height: 15%;
-  background-color: var(--color-secondary);
-  padding: 30px;
+  width: 30%;
 
-  border-top-left-radius: 60px;
-  box-shadow: 3px 3px 3px rgba(103, 103, 103, 0.2);
-  margin: 15px 5px;
+  background-color: var(--color-secondary);
+  /* padding: 30px;
+
+  margin: 15px 5px; */
 }
 
-/* .counter:first-child {
-  padding-top: 50px;
-  padding-bottom: 50px;
-} */
-
 .count-dogovori,
-.count-premija,
-.count-zivotno {
+.count-premija {
   margin: 0 auto;
   padding-bottom: 0;
   font-size: 60px;
@@ -289,7 +282,7 @@ hr {
 .naslovna-uslugi {
   background-color: rgba(255, 255, 255, 0.22);
   backdrop-filter: blur(1px);
-  width: 350px;
+  width: 30%;
   height: 500px;
   /* box-shadow: 3px 5px 5px grey; */
   border-radius: 15px;
@@ -1142,14 +1135,13 @@ footer {
   }
 
   .count-dogovori,
-  .count-premija,
-  .count-zivotno {
+  .count-premija {
     font-size: 50px;
   }
-  .naslovna-uslugi {
+  /* .naslovna-uslugi {
     width: 310px;
     height: 700px;
-  }
+  } */
 
   .slika-zgrada {
     margin: 20px auto;
@@ -1235,12 +1227,11 @@ footer {
   .slogan {
     font-size: 50px;
   }
-  .count-container {
+  /* .count-container {
     width: 210px;
-  }
+  } */
   .count-dogovori,
-  .count-premija,
-  .count-zivotno {
+  .count-premija {
     font-size: 40px;
   }
   .count-opis {
@@ -1251,10 +1242,10 @@ footer {
   .naslovna-izvor__aso {
     right: 40px;
   }
-  .naslovna-uslugi {
+  /* .naslovna-uslugi {
     width: 290px;
     height: 700px;
-  }
+  } */
 
   .zasto-broker__pricini p {
     font-size: 18px;
@@ -1358,15 +1349,14 @@ footer {
   }
 
   .count-container {
-    width: 335px;
+    /* width: 335px; */
     height: 160px;
     padding-top: 15px;
     padding-bottom: 20px;
   }
 
   .count-dogovori,
-  .count-premija,
-  .count-zivotno {
+  .count-premija {
     font-size: 40px;
   }
   .counter:first-child {
@@ -1375,7 +1365,7 @@ footer {
   }
 
   .naslovna-uslugi {
-    width: 220px;
+    width: 25%;
     height: 700px;
   }
 
@@ -1610,11 +1600,11 @@ footer {
     letter-spacing: normal;
   }
   .count-container {
-    width: 250px;
+    /* width: 250px; */
     height: 160px;
   }
   .naslovna-uslugi {
-    width: 750px;
+    width: 100%;
     height: 350px;
   }
   .zasto-broker__pricini {
@@ -1739,7 +1729,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   section {
-    padding: 2rem 0rem;
+    padding: 2rem 0.9rem;
   }
 
   #main {
@@ -1755,14 +1745,15 @@ footer {
   }
 
   .count-container {
-    width: 150px;
-    height: 170px;
-    border-radius: 15px;
+    /* width: 20%; */
+    height: 150px;
+    /* border-radius: 15px; */
+    /* text-align: center;
+    vertical-align: center; */
   }
 
   .count-dogovori,
-  .count-premija,
-  .count-zivotno {
+  .count-premija {
     font-size: 28px;
   }
   .count-opis {
@@ -1775,14 +1766,14 @@ footer {
   }
 
   .naslovna-uslugi {
-    height: 400px;
+    height: 450px;
   }
 
   .zasto-broker__pricini {
     width: 100%;
     height: 150px;
     border-radius: 15px;
-    margin: 15px;
+    margin: 15px 0;
   }
 
   .prasanja {

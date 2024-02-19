@@ -1588,6 +1588,7 @@ footer {
     transform: top 1s ease;
     transition: 1s;
     display: none;
+    margin-top: 0;
   }
   .closeMenu {
     display: block;

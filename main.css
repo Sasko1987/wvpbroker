@@ -497,7 +497,7 @@ article {
 
 #zasto-broker {
   background-color: white;
-  padding: 70px auto 150px auto;
+  /* padding: 70px auto 150px auto; */
 }
 
 .zasto-broker__container {
@@ -560,12 +560,12 @@ article {
 
 #uslugi-pridobivki-zivotno {
   background-color: var(--color-secondary);
-  padding: 70px 0px;
+  /* padding: 70px 0px; */
 }
 
 #sekcija-vidovi-zivotno-osiguruvanje {
   background-color: white;
-  padding: 70px 0;
+  /* padding: 70px 0; */
 }
 .uslugi-zivotono__container,
 .uslugi-nezivotono__container {
@@ -628,6 +628,11 @@ article {
   display: flex;
 }
 
+.osiguruvanje-vozila {
+  text-align: left;
+  margin: 5px auto;
+}
+
 .uslugi-tab__aktive,
 .nezivotno-tab__active {
   border: 2px solid #2a4eba;
@@ -653,7 +658,7 @@ article {
   align-items: center;
   justify-content: space-around;
   background-color: rgb(253, 253, 253);
-  padding: 70px 0;
+  /* padding: 70px 0; */
 }
 
 .main-main {
@@ -723,7 +728,7 @@ article {
   align-items: center;
 
   justify-content: space-evenly;
-  padding: 50px 100px;
+  padding: auto 100px;
 }
 
 .uslugi-vidovi-zivotno h3 {
@@ -734,15 +739,23 @@ article {
   font-weight: bold;
 }
 
-#nezivotno-osiguruvanje {
+/* #nezivotno-osiguruvanje {
   padding: 70px 0;
-}
+} */
 .nezivotno-nalov {
   margin-left: 65px;
 }
 
+.nezivotno-uslugi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .naslov {
   margin-left: 65px;
+  margin-right: 65px;
   font-size: 35px;
 }
 
@@ -756,10 +769,10 @@ article {
 
 #dobrovolno-zdravstveno-osiguruvanje {
   display: flex;
-  align-items: left;
+  /* align-items: left; */
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 70px 0;
+  /* padding: 70px 0; */
   background-color: white;
 }
 
@@ -803,13 +816,13 @@ article {
 }
 
 #partneri-zivotno {
-  padding: 70px 20px;
+  /* padding: 70px 20px; */
   background-color: var(--color-secondary);
 }
 
 #partneri-nezivotno {
   background-color: white;
-  padding: 70px 20px;
+  /* padding: 70px 20px; */
   position: relative;
   margin-bottom: 50px;
 }
@@ -1010,7 +1023,7 @@ footer {
 
 .footer-broj {
   font-size: 20px;
-  margin-bottom: 16px;
+  margin: 16px 0;
 }
 
 .footer-adresa {
@@ -1019,8 +1032,13 @@ footer {
   align-items: center;
 }
 
-.footer-adresa p {
+.footer-adresa p,
+.broj p {
   line-height: 0.5px;
+}
+
+.footer-mail {
+  margin: 16px 0;
 }
 
 /* ------------PLAKANJE------------ */
@@ -1141,11 +1159,11 @@ footer {
   .slogan {
     font-size: 50px;
   }
-  .count-container {
+  /* .count-container {
     width: 230px;
     height: 235px;
     padding-top: 15px;
-  }
+  } */
 
   .zasto-broker__pricini {
     height: 320px;
@@ -1256,9 +1274,9 @@ footer {
     padding-top: 10px;
   }
 
-  .naslovna-izvor__aso {
+  /* .naslovna-izvor__aso {
     right: 40px;
-  }
+  } */
   /* .naslovna-uslugi {
     width: 290px;
     height: 700px;
@@ -1365,12 +1383,12 @@ footer {
     font-size: 35px;
   }
 
-  .count-container {
-    /* width: 335px; */
+  /* .count-container {
+    width: 335px;
     height: 160px;
     padding-top: 15px;
     padding-bottom: 20px;
-  }
+  } */
 
   .count-dogovori,
   .count-premija {
@@ -1449,7 +1467,7 @@ footer {
       url(images/posreduvanje.png) no-repeat;
     background-size: cover;
     color: white;
-    padding-bottom: 30px 10px;
+    /* padding-bottom: 30px 10px; */
     margin-bottom: 0;
   }
 
@@ -1476,7 +1494,8 @@ footer {
       url(images/family.jpg) no-repeat;
     background-size: cover;
     color: white;
-    padding-bottom: 30px 10px;
+    padding: 70px 0;
+    /* padding-bottom: 30px 10px; */
     margin-bottom: 0;
   }
 
@@ -1605,6 +1624,9 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  section {
+    padding: 2rem 0.5rem;
+  }
   #main {
     height: 40vh;
   }
@@ -1617,7 +1639,7 @@ footer {
     letter-spacing: normal;
   }
   .count-container {
-    /* width: 250px; */
+    width: 46%;
     height: 160px;
     border-radius: 15px;
   }
@@ -1666,25 +1688,48 @@ footer {
     width: 90%;
   }
 
-  .main-uslugi {
+  /* .main-uslugi {
     padding: auto 10px;
+  } */
+
+  #main-uslugi {
+    background-position: center;
   }
 
-  #sekcija-vidovi-zivotno-osiguruvanje {
+  .nezivotno-nalov,
+  .naslov {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  /* #nezivotno-osiguruvanje p:first-child {
+    text-align: left;
+    margin-left: 35px;
+  } */
+
+  /* .naslov {
+    text-align: center;
+    margin: auto 0.5rem;
+  } */
+
+  /* #sekcija-vidovi-zivotno-osiguruvanje {
     padding-bottom: 0;
-  }
+  } */
 
-  #nezivotno-osiguruvanje,
+  /* #nezivotno-osiguruvanje,
   #dobrovolno-zdravstveno-osiguruvanje {
     padding: 20px auto;
-  }
+  } */
 
   .uslugi-zivotono__container,
   .uslugi-nezivotono__container {
     border: none;
     box-shadow: none;
     background-color: white;
-    margin: 50px 10px;
+    /* margin: 50px 10px; */
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 30px;
   }
 
   .uslugi-zivotno__tab,
@@ -1751,6 +1796,14 @@ footer {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .footer-adresa {
+    margin: 10px;
+  }
+
+  #footer {
+    padding-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1770,13 +1823,13 @@ footer {
     margin-right: 5px;
   }
 
-  .count-container {
+  /* .count-container {
     width: 46%;
-    /* height: 150px; */
+    height: 150px;
 
-    /* text-align: center;
-    vertical-align: center; */
-  }
+    text-align: center;
+    vertical-align: center;
+  } */
 
   .count-dogovori,
   .count-premija {

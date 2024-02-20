@@ -161,7 +161,7 @@ hr {
 }
 
 #naslovna-counter {
-  background-color: var(--color-secondary);
+  background-color: white;
   margin-top: 0;
   position: relative;
 }
@@ -182,9 +182,12 @@ hr {
   width: 30%;
 
   background-color: var(--color-secondary);
-  /* padding: 30px;
+  padding: 30px;
 
-  margin: 15px 5px; */
+  margin: 15px 5px;
+  border-top-left-radius: 60px;
+
+  box-shadow: 3px 3px 3px rgba(103, 103, 103, 0.2);
 }
 
 .count-dogovori,
@@ -574,6 +577,9 @@ article {
   border-radius: 15px;
   margin: 140px 90px 30px 90px;
   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.6);
+  padding-bottom: 350px;
+  /* height: 500px; */
+  position: relative;
 }
 
 .uslugi-zivotno__tab,
@@ -606,19 +612,30 @@ article {
 .nezivotno-tekst {
   display: none;
   margin: 0 auto;
-  padding: 0px 50px 50px;
+  /* padding: 0px 50px 50px; */
   vertical-align: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  right: -30%;
+  transform: translate(-40%, -40%);
 }
 
 .uslugi-tekst__activ,
 .nezivotno-tekst__activ {
-  display: block;
+  display: flex;
 }
 
 .uslugi-tab__aktive,
 .nezivotno-tab__active {
   border: 2px solid #2a4eba;
   transform: translateY(-75%);
+}
+
+.uslugi p {
+  display: inline-block;
 }
 
 .investicii-slika {
@@ -1602,6 +1619,7 @@ footer {
   .count-container {
     /* width: 250px; */
     height: 160px;
+    border-radius: 15px;
   }
   .naslovna-uslugi {
     width: 100%;
@@ -1684,6 +1702,14 @@ footer {
     height: 80px;
   }
 
+  .uslugi-tekst__activ,
+  .nezivotno-tekst__activ {
+    position: static;
+    display: block;
+    transform: translate(0);
+    width: 90%;
+  }
+
   .ikoni {
     font-size: 45px;
   }
@@ -1745,9 +1771,9 @@ footer {
   }
 
   .count-container {
-    width: 25%;
+    width: 46%;
     /* height: 150px; */
-    /* border-radius: 15px; */
+
     /* text-align: center;
     vertical-align: center; */
   }
@@ -1756,9 +1782,9 @@ footer {
   .count-premija {
     font-size: 28px;
   }
-  .count-opis {
+  /* .count-opis {
     font-size: 16px;
-  }
+  } */
 
   .naslovna-izvor__aso {
     text-align: center;
@@ -1771,7 +1797,7 @@ footer {
 
   .zasto-broker__pricini {
     width: 100%;
-    height: 150px;
+    height: 160px;
     border-radius: 15px;
     margin: 15px 0;
   }

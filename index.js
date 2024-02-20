@@ -32,20 +32,11 @@ function show() {
 function close() {
   mainMenu.style.top = "-150%";
 }
-// document.getElementById("menu-btn").addEventListener("click", function () {
-//   var menuList = document.getElementById("menu-list");
-//   if (menuList.style.display === "block") {
-//     menuList.style.display = "none";
-//   } else {
-//     menuList.style.display = "block";
-//   }
-// });
 
 // COUNTER ZA NASLOVNA
 
 const countDogovori = document.querySelector(".count-dogovori");
 const countPremija = document.querySelector(".count-premija");
-const countZivotno = document.querySelector(".count-zivotno");
 
 function startCounter(klasa, ostatok, brojac, maksimum) {
   let count = 1;
@@ -62,10 +53,6 @@ function formatNumberWithDot(number) {
   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
 
-// startCounter(countDogovori, 1139, 1450, 27240);
-// startCounter(countPremija, 30802, 81256, 924681);
-// startCounter(countZivotno, 107, 135, 1727);
-
 // Startuvanje na counter koa ke se pojavi sekcijata
 const counterSection = document.getElementById("naslovna-counter");
 
@@ -80,29 +67,8 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       startCounter(countDogovori, 1139, 1450, 27240);
       startCounter(countPremija, 30802, 81256, 924681);
-      startCounter(countZivotno, 107, 135, 1727);
     }
   });
 }, options);
 
 observer.observe(counterSection);
-
-// const allSections = document.querySelectorAll("section");
-
-// const revealSection = function (entries, observer) {
-//   const { entry } = entries;
-
-//   if (!entry.isIntersecting) return;
-//   entry.target.classList.remove("section-hidden");
-//   observer.unobserve(entry.target);
-// };
-
-// const sectionObserver = new IntersectionObserver(revealSection, {
-//   root: null,
-//   threshold: 0.15,
-// });
-
-// allSections.forEach(function (section) {
-//   sectionObserver.observe(section);
-//   section.classList.add("section--hidden");
-// });

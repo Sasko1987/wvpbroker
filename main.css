@@ -186,7 +186,7 @@ hr {
 .count-container {
   flex-wrap: wrap;
   width: 30%;
-
+  height: 15%;
   background-color: var(--color-secondary);
   padding: 30px;
 
@@ -1185,11 +1185,9 @@ footer {
   .slogan {
     font-size: 50px;
   }
-  /* .count-container {
-    width: 230px;
-    height: 235px;
-    padding-top: 15px;
-  } */
+  .count-container {
+    height: 180px;
+  }
 
   .zasto-broker__pricini {
     height: 320px;

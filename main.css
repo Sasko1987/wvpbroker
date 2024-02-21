@@ -619,7 +619,6 @@ article {
   display: none;
   margin: 0 auto;
   /* padding: 0px 50px 50px; */
-  vertical-align: center;
   flex-direction: column;
   align-items: center;
   position: absolute;
@@ -1092,13 +1091,33 @@ footer {
 .plakanje-btn {
   background-color: white;
   height: 70px;
+  transform: translateY(-130%);
+}
+
+.plakanje-btn:hover {
+  background-color: #dfe6fc;
 }
 
 .plakanje-opcii_active {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   margin: 0 20px 10px 20px;
   justify-content: space-around;
+
+  margin: 0 auto;
+  /* padding: 0px 50px 50px; */
+
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  right: -30%;
+  transform: translate(-40%, -40%);
+}
+
+.online-plakanje_container {
+  padding-bottom: 180px;
 }
 
 .plati-btn {
@@ -1110,6 +1129,7 @@ footer {
   border-radius: 15px;
   width: 150px;
   margin-top: 15px;
+  align-self: flex-start;
 }
 
 .info-plakanje {
@@ -1366,7 +1386,8 @@ footer {
   }
 
   .plati-btn {
-    width: 500px;
+    align-self: center;
+    width: 80%;
     margin-top: 30px;
   }
 }
@@ -1406,7 +1427,7 @@ footer {
 
   .count-dogovori,
   .count-premija {
-    font-size: 40px;
+    font-size: 30px;
   }
   .counter:first-child {
     padding-top: 0;
@@ -1586,7 +1607,7 @@ footer {
 
   .banka-smetka_container {
     margin-top: 20px;
-    align-items: center;
+    font-size: 15px;
     justify-content: center;
   }
   .banka,
@@ -1801,9 +1822,16 @@ footer {
   }
 
   .plakanje-opcii_active {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column-reverse;
+
     justify-content: center;
+    position: static;
+    transform: translate(0);
+    width: 80%;
+  }
+
+  .online-plakanje_container {
+    padding-bottom: 10px;
   }
 
   .uplatnici {
@@ -1847,11 +1875,11 @@ footer {
 
   .count-dogovori,
   .count-premija {
-    font-size: 28px;
+    font-size: 24px;
   }
-  /* .count-opis {
+  .count-opis {
     font-size: 16px;
-  } */
+  }
 
   .naslovna-izvor__aso {
     text-align: center;
@@ -1928,16 +1956,17 @@ footer {
   .smetka {
     line-height: 10px;
     font-size: 14px;
-    margin: 5px;
+    margin: 2px 0 10px 3px;
   }
 
   .smetka {
-    margin-left: 10px;
+    margin-left: 3px;
   }
 
   .plakanje-opcii_active {
     padding: 0;
-    margin: auto 5px;
+    margin: auto;
+    width: 90%;
   }
 
   .plakanje-btn {
@@ -1948,5 +1977,14 @@ footer {
 @media only screen and (max-width: 399px) {
   .zivotno-pridobivki {
     padding: auto 0;
+  }
+
+  .banka,
+  .smetka {
+    font-size: 13px;
+  }
+  .count-dogovori,
+  .count-premija {
+    font-size: 20px;
   }
 }

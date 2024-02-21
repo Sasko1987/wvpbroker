@@ -66,7 +66,7 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       startCounter(countDogovori, 1139, 1450, 27240);
-      startCounter(countPremija, 30802, 81256, 924681);
+      startCounter(countPremija, 30802000, 81256000, 924681000);
     }
   });
 }, options);

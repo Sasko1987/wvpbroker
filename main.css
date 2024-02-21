@@ -525,6 +525,10 @@ article {
   margin: 30px 10px;
 }
 
+.zosto-posreduvanje {
+  height: 200px;
+}
+
 .zasto-broker__pricini:hover {
   transform: scale(1.05);
 }
@@ -1193,6 +1197,10 @@ footer {
     height: 320px;
   }
 
+  .zosto-posreduvanje {
+    height: 200px;
+  }
+
   .count-dogovori,
   .count-premija {
     font-size: 50px;
@@ -1445,6 +1453,10 @@ footer {
     height: 180px;
   }
 
+  .zosto-posreduvanje {
+    height: 150px;
+  }
+
   /* .prasanja {
     width: 750px;
   } */
@@ -1685,6 +1697,9 @@ footer {
     height: 280px;
   }
 
+  .zosto-posreduvanje {
+    height: 180px;
+  }
   .count-opis {
     font-size: 18px;
   }
@@ -1895,6 +1910,11 @@ footer {
     margin: 15px 0;
   }
 
+  .zosto-posreduvanje {
+    width: 45%;
+    height: 200px;
+  }
+
   /* .prasanja {
     width: 380px;
   } */
@@ -1984,5 +2004,10 @@ footer {
   .count-dogovori,
   .count-premija {
     font-size: 20px;
+  }
+
+  .zosto-posreduvanje {
+    width: 90%;
+    height: 150px;
   }
 }

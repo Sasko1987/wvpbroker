@@ -721,7 +721,7 @@ article {
   flex-direction: column;
   justify-content: space-between;
 
-  width: 250px;
+  width: 22%;
   height: 220px;
 }
 
@@ -923,7 +923,7 @@ article {
 
 .odgovori {
   display: none;
-  width: 770px;
+  width: 38%;
   margin: 0 auto;
   border: 1px solid var(--color-primary);
   border-top: none;
@@ -938,7 +938,7 @@ article {
 
 .prasanja {
   border: 1px solid var(--color-primary);
-  width: 800px;
+  width: 40%;
   margin: 30px auto 0 auto;
   background-color: var(--color-primary);
   color: white;
@@ -1251,6 +1251,14 @@ footer {
   .plakanje-opcii_active {
     padding: 30px;
   }
+
+  .prasanja {
+    width: 60%;
+  }
+
+  .odgovori {
+    width: 58%;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1320,9 +1328,9 @@ footer {
     width: 450px;
     height: 400px;
   }
-  .zivotno-pridobivki {
+  /* .zivotno-pridobivki {
     margin: 10px;
-  }
+  } */
 
   .zivotno-items__button,
   .nezivotno-items__button {
@@ -1418,13 +1426,13 @@ footer {
     height: 180px;
   }
 
-  .prasanja {
+  /* .prasanja {
     width: 750px;
-  }
+  } */
 
-  .odgovori {
+  /* .odgovori {
     width: 720px;
-  }
+  } */
 
   .vfp-ad-skopje {
     font-size: 34px;
@@ -1665,11 +1673,11 @@ footer {
     flex-direction: column;
   }
   .prasanja {
-    width: 570px;
+    width: 80%;
   }
 
   .odgovori {
-    width: 540px;
+    width: 78%;
   }
 
   #kontakt-main {
@@ -1775,12 +1783,12 @@ footer {
 
   .zivotno-pridobivki-container {
     flex-wrap: wrap;
-    padding: 50px 50px;
+    /* padding: 40; */
   }
 
   .zivotno-pridobivki {
-    width: 200px;
-    height: 220px;
+    width: 45%;
+    margin-bottom: 15px;
   }
 
   .zivotno-items {
@@ -1861,12 +1869,12 @@ footer {
     margin: 15px 0;
   }
 
-  .prasanja {
+  /* .prasanja {
     width: 380px;
-  }
+  } */
 
   .odgovori {
-    width: 350px;
+    width: 75%;
   }
 
   .google-map {
@@ -1891,14 +1899,14 @@ footer {
     background-position: center;
   }
 
-  .zivotno-pridobivki-container {
+  /* .zivotno-pridobivki-container {
     padding: 50px 5px;
-  }
+  } */
 
-  .zivotno-pridobivki {
+  /* .zivotno-pridobivki {
     width: 170px;
     height: 250px;
-  }
+  } */
 
   #partneri-zivotno img,
   #partneri-nezivotno img {
@@ -1934,5 +1942,11 @@ footer {
 
   .plakanje-btn {
     height: 100px;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .zivotno-pridobivki {
+    padding: auto 0;
   }
 }

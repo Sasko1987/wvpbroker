@@ -1231,6 +1231,7 @@ footer {
   flex-direction: column;
   align-items: center;
   animation: showUp 3s forwards;
+  z-index: 15;
 }
 
 form {
@@ -1269,6 +1270,7 @@ form {
   border-radius: 15px;
   margin: 50px auto;
   text-align: center;
+  z-index: 30;
 }
 
 .response-message h3 {

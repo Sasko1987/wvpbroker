@@ -1225,7 +1225,7 @@ footer {
   display: none;
 }
 
-.active {
+.activeKorisnici {
   display: flex;
   flex-direction: column;
   align-items: center;

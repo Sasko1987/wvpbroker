@@ -22,7 +22,7 @@ emojis.forEach((emoji) => {
     console.log(clicked);
     document
       .querySelector(`.griza-klienti_form-${clicked.dataset.tab}`)
-      .classList.add("active");
+      .classList.add("activeKorisnici");
     // clicked.classList.add(`griza-klienti_form-${clicked.dataset.tab}`);
   });
 });
@@ -30,5 +30,5 @@ emojis.forEach((emoji) => {
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   zadovolstvoSection.classList.add("hidden");
-  responseSection.classList.add("active");
+  responseSection.classList.add("activeKorisnici");
 });

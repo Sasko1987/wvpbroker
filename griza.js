@@ -30,5 +30,5 @@ emojis.forEach((emoji) => {
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   zadovolstvoSection.classList.add("hidden");
-  responseSection.classList.remove("hidden").add("active");
+  responseSection.classList.add("active");
 });

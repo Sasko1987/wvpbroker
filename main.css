@@ -1217,8 +1217,7 @@ footer {
 }
 
 .hidden {
-  animation: fadeOut 800ms forwards;
-  z-index: 0;
+  display: none;
 }
 
 .griza-klienti_form-1,
@@ -1230,8 +1229,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: showUp 3s forwards;
-  z-index: 15;
+  animation: showUp 2s forwards;
 }
 
 form {
@@ -1254,6 +1252,7 @@ form {
 .submit {
   border: none;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .label {
@@ -1270,7 +1269,6 @@ form {
   border-radius: 15px;
   margin: 50px auto;
   text-align: center;
-  z-index: 30;
 }
 
 .response-message h3 {
@@ -1284,7 +1282,7 @@ form {
   padding-bottom: 60px;
 }
 
-@keyframes fadeOut {
+/* @keyframes fadeOut {
   0% {
     opacity: 1;
   }
@@ -1300,7 +1298,7 @@ form {
     opacity: 0;
     display: none;
   }
-}
+} */
 
 @keyframes showUp {
   0% {

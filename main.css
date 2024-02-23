@@ -1113,11 +1113,15 @@ footer {
   cursor: pointer;
   border: none;
   background-color: #ef2129;
-  color: white;
   border-radius: 15px;
   width: 150px;
   margin-top: 15px;
   align-self: flex-start;
+}
+
+.online-btn_link {
+  text-decoration: none;
+  color: white;
 }
 
 .info-plakanje {

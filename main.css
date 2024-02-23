@@ -1162,6 +1162,10 @@ footer {
   text-align: center;
 }
 
+.plakanje-zivotno_container {
+  padding-bottom: 500px;
+}
+
 #section-korisnici {
   background: url(images/griza-\ korisnici.jpg);
   background-size: cover;
@@ -1681,6 +1685,10 @@ form {
   .zivotno-items__button,
   .nezivotno-items__button {
     height: 110px;
+  }
+
+  .plakanje-zivotno_container {
+    padding-bottom: 600px;
   }
 
   #partneri-intro {

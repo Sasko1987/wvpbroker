@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WVP osiguritelen broker</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
     <link rel="stylesheet" href="main.css" />
-
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -125,7 +125,7 @@
       </div>
       <div class="griza-klienti_form-2">
         <img src="images/sad-emoji.png" class="emoji-sad" id="smile" alt="" />
-        <form action="">
+        <form>
           <label for="telefonski-broj" class="label">Телефонски број</label>
           <input
             type="number"
@@ -164,9 +164,8 @@
         </div>
       </div>
     </footer>
-    <script src="hamburger.js"></script>
-    <script src="cpp.js"></script>
-    <script src="nav-path.js"></script>
+    <script src="commonFunctions.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="griza.js"></script>
   </body>
 </html>

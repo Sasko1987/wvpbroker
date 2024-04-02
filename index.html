@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WVP osiguritelen broker</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
     <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -67,20 +67,19 @@
         </ul>
       </nav>
     </header>
-    <main id="main">
+    <main id="main" class="main">
       <div class="main-tekst">
         <img src="images/VFP AD.png" alt="ВФП АД СКОПЈЕ" class="vfp-ad" />
-        <h2 class="slogan">За вас го избираме</h2>
-        <h2 class="slogan">најдоброто</h2>
+        <h2 class="slogan">За вас го избираме најдоброто</h2>
       </div>
     </main>
     <section id="naslovna-counter">
-      <div class="counter counter-main">
-        <div class="count-container">
+      <div class="card-container">
+        <div class="card counter">
           <p class="count-dogovori">0</p>
           <p class="count-opis count-dogovori__opis">Склучени договори</p>
         </div>
-        <div class="count-container">
+        <div class="card counter">
           <p class="count-premija">0</p>
           <p class="count-opis count-dogovori__opis">
             Бруто полисирана премија во денари
@@ -88,10 +87,69 @@
         </div>
       </div>
     </section>
+    <section class="naslovna-vfp-container">
+      <div>
+        <img src="images/wvp-zgrada.jpg" alt="" class="vfp-naslovna-img" />
+      </div>
+      <div class="vfp-text">
+        <p class="naslovna-za-vfp">
+          ВФП АД Скопје е најдоброто осигуритено брокерско друштво според бруто
+          полисирана премија.
+        </p>
+
+        <p class="naslovna-za-vfp">
+          ВФП АД Скопје е основано во 2005 година, кое е дел од меѓународната
+          групација за финансиско советување WVP Group со седиште во Грац,
+          Австрија. WVP Group е основано во 1985 година со идеја за стручно
+          советување на клиентите за финансиски вложувања.
+        </p>
+
+        <p class="naslovna-za-vfp">
+          Денеска е присутна во 15 земји на Средна и Источна Европа.
+        </p>
+      </div>
+    </section>
+    <section id="zasto-broker">
+      <div>
+        <h2 class="section-title">
+          Зошто да имате ваш личен осигурителен брокер?
+        </h2>
+        <hr />
+      </div>
+      <div class="card-container">
+        <div class="card zasto-broker__pricini">
+          <i class="fa-solid fa-hourglass-start ikoni-broker"></i>
+          <p>
+            За да го заштедите најважниот и неповратен ресурс – Вашето ВРЕМЕ
+          </p>
+        </div>
+        <div class="card zasto-broker__pricini">
+          <i class="fa-solid fa-envelopes-bulk ikoni-broker ikoni-ponuda"></i>
+          <p>
+            За да добиете објективна, непристрасна и најдобра понуда за Вас и
+            Вашите потреби, а при тоа и финансиски да заштедите
+          </p>
+        </div>
+        <div class="card zasto-broker__pricini">
+          <i class="fa-solid fa-user-tie ikoni-broker"></i>
+          <p>
+            За да имате постојана стручна и професионална грижа околу Вашите
+            полиси за осигурување и отштетни побарувања
+          </p>
+        </div>
+        <div class="card zasto-broker__pricini">
+          <i class="fa-solid fa-info ikoni-broker ikona-info"></i>
+          <p>
+            За да бидете постојано информирани за сите новитети и поволности кои
+            се нудат на осигурителниот пазар во Р.Македонија
+          </p>
+        </div>
+      </div>
+    </section>
     <section id="naslovna-uslugi">
       <h2 class="section-title title-uslugi">Услуги кои ги нудиме</h2>
       <hr />
-      <div class="naslovna-nudenje-uslugi">
+      <div class="card-container">
         <div class="naslovna-uslugi">
           <h3 class="naslovna-uslugi-osiguruvanje">Животно осигурување</h3>
           <ul class="naslovna-vidovi-osiguruvanje">
@@ -138,8 +196,16 @@
               од болест
             </li>
             <li>
-              <i class="fa-solid fa-angles-right arrow-right"></i> Редовни
-              прегледи
+              <i class="fa-solid fa-angles-right arrow-right"></i> Осигурување
+              на малигни заболувања
+            </li>
+            <li>
+              <i class="fa-solid fa-angles-right arrow-right"></i>
+              Специјалистички прегледи
+            </li>
+            <li>
+              <i class="fa-solid fa-angles-right arrow-right"></i>
+              Болничко лекување
             </li>
             <li>
               <i class="fa-solid fa-angles-right arrow-right"></i> Стоматолошки
@@ -182,43 +248,7 @@
         </div>
       </div>
     </section>
-    <section id="zasto-broker">
-      <div>
-        <h2 class="section-title">
-          Зошто да имате ваш личен осигурителен брокер?
-        </h2>
-        <hr />
-      </div>
-      <div class="zasto-broker__container">
-        <div class="zasto-broker__pricini">
-          <i class="fa-solid fa-hourglass-start ikoni-broker"></i>
-          <p>
-            За да го заштедите најважниот и неповратен ресурс – Вашето ВРЕМЕ !
-          </p>
-        </div>
-        <div class="zasto-broker__pricini">
-          <i class="fa-solid fa-envelopes-bulk ikoni-broker ikoni-ponuda"></i>
-          <p>
-            За да добиете објективна, непристрасна и најдобра понуда за Вас и
-            Вашите потреби, а при тоа и финансиски да заштедите !
-          </p>
-        </div>
-        <div class="zasto-broker__pricini">
-          <i class="fa-solid fa-user-tie ikoni-broker"></i>
-          <p>
-            За да имате постојана стручна и професионална грижа околу Вашите
-            полиси за осигурување и отштетни побарувања !
-          </p>
-        </div>
-        <div class="zasto-broker__pricini">
-          <i class="fa-solid fa-info ikoni-broker ikona-info"></i>
-          <p>
-            За да бидете постојано информирани за сите новитети и поволности кои
-            се нудат на осигурителниот пазар во Р.Македонија!
-          </p>
-        </div>
-      </div>
-    </section>
+
     <section id="partneri">
       <h2 class="section-title">Наши партнери</h2>
       <hr />
@@ -272,5 +302,5 @@
     crossorigin="anonymous"
   ></script>
   <script src="index.js"></script>
-  <script src="nav-path.js"></script>
+  <script src="commonFunctions.js"></script>
 </html>

@@ -709,8 +709,26 @@ article {
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: white;
+  padding-left: 0;
 }
 
+.privatno-zdravstveno-container {
+  background-color: var(--color-primary);
+  height: fit-content;
+  width: 55%;
+  /* margin-right: 20px; */
+  color: white;
+  border-radius: 15px;
+}
+
+.privatno-zdravstveno-container p {
+  color: white;
+  padding-left: 20px;
+}
+
+.privatno-zdravstveno-container h2 {
+  padding-left: 20px;
+}
 .vidovi-privatno-zdravstveno p {
   border-top: 1px solid gray;
   margin: 10px 0;
@@ -982,6 +1000,16 @@ footer {
 .footer-adresa p,
 .broj p {
   line-height: 0.5px;
+}
+
+.footer-adresa-row {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-adresa-margin {
+  margin-left: 80px;
+  text-align: center;
 }
 
 .footer-mail {
@@ -1746,6 +1774,10 @@ form {
     width: 40%;
     margin-bottom: 60px;
   }
+
+  .footer-adresa-margin {
+    margin-left: 20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1771,7 +1803,9 @@ form {
     display: flex;
     height: 80vh;
   }
-
+  .privatno-zdravstveno-container {
+    width: 100vw;
+  }
   .vfp-text {
     width: 100%;
     display: flex;
@@ -1806,6 +1840,15 @@ form {
   }
   .footer-flex {
     flex-direction: column;
+  }
+
+  .footer-adresa-row {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-adresa-margin {
+    margin-left: 0;
   }
   .prasanja {
     width: 80%;

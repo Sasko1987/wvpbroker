@@ -47,8 +47,9 @@ const options = {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      startCounter(countDogovori, 1139, 1450, 27240);
-      startCounter(countPremija, 30802000, 81256000, 924681000);
+      // 655 % 2153 i na count se dodava 1103
+      startCounter(countDogovori, 654, 2153, 35103);
+      startCounter(countPremija, 20961917, 92152363, 1311095000);
       observer.unobserve(entry.target);
     }
   });

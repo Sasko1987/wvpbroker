@@ -33,17 +33,3 @@ nezivotnoButtons.forEach((btn) => {
       .classList.add("nezivotno-tekst__activ");
   });
 });
-
-// function adjustClass() {
-//   if (window.matchMedia("(max-width: 768px)").matches) {
-//     document
-//       .querySelector(".uslugi-tekst__activ")
-//       .classList.remove("uslugi-tekst__activ");
-//   }
-// }
-
-// // Initial call to adjustClass
-// adjustClass();
-
-// // Event listener for window resize
-// window.addEventListener("resize", adjustClass);

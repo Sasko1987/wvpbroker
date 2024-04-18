@@ -3,17 +3,17 @@ const dpzoBtn = document.getElementById("btn-dpzo");
 const zivotnoBtn = document.getElementById("btn-zivotno");
 const nezivotnoBtn = document.getElementById("btn-nezivotno");
 
-dpzoBtn.addEventListener("click", () => {
-  window.location.href = "uslugi.html#dobrovolno-zdravstveno-osiguruvanje";
-});
+function buttonRedirect(button, destination) {
+  button.addEventListener("click", () => {
+    window.location.href = `${destination}`;
+  });
+}
 
-zivotnoBtn.addEventListener("click", () => {
-  window.location.href = "uslugi.html#main-uslugi";
-});
+buttonRedirect(dpzoBtn, "uslugi.html#dobrovolno-zdravstveno-osiguruvanje");
 
-nezivotnoBtn.addEventListener("click", () => {
-  window.location.href = "uslugi.html#nezivotno-osiguruvanje";
-});
+buttonRedirect(zivotnoBtn, "uslugi.html#main-uslugi");
+
+buttonRedirect(nezivotnoBtn, "uslugi.html#nezivotno-osiguruvanje");
 
 // COUNTER ZA NASLOVNA
 

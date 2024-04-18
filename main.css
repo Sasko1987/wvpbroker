@@ -114,6 +114,7 @@ section {
 .online-plakanje {
   background-color: var(--color-primary);
   color: white;
+  border: 2px solid var(--color-primary);
   border-radius: 15px;
   padding: 8px 15px;
   font-size: 16px;
@@ -123,7 +124,6 @@ section {
 .online-plakanje:hover {
   background: var(--color-secondary);
   color: black;
-  border: 2px solid var(--color-primary);
 }
 
 hr {
@@ -180,7 +180,6 @@ hr {
 .vfp-naslovna-img {
   width: 50vw;
   height: 85vh;
-  /* margin: 0 60px; */
 }
 
 .naslovna-za-vfp {
@@ -611,7 +610,7 @@ article {
   background-color: rgb(253, 253, 253);
 }
 
-.main-main {
+.main-container {
   width: 40%;
 }
 
@@ -663,7 +662,6 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   width: 22%;
   height: 220px;
 }
@@ -716,7 +714,6 @@ article {
   background-color: var(--color-primary);
   height: fit-content;
   width: 55%;
-  /* margin-right: 20px; */
   color: white;
   border-radius: 15px;
 }
@@ -757,7 +754,6 @@ article {
 .nasi-partneri img {
   width: 250px;
   margin: 20px auto;
-  background: linear-gradient(rgba (255, 255, 255, 0.6));
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   flex: 1 1 15%;
 }
@@ -778,7 +774,6 @@ article {
 .nasi-partneri img:hover {
   transform: scale(0.95);
   transition: all 400ms ease;
-  cursor: pointer;
 }
 
 .partneri-naslov {
@@ -800,79 +795,6 @@ article {
   max-width: 360px;
   background-color: white;
 }
-
-/* #partneri-nezivotno img {
-  height: 80px;
-  width: 200px;
-} */
-
-/* .vfp-container {
-  margin-top: 220px;
-  margin-bottom: 250px;
-} */
-
-.vfp-partneri {
-  width: 400px !important;
-  height: 130px !important;
-}
-
-/* .float {
-  position: absolute;
-}
-
-.grawe {
-  top: 230px;
-  left: 490px;
-}
-
-.sava {
-  top: 230px;
-  right: 480px;
-}
-
-.viner {
-  top: 290px;
-  left: 250px;
-}
-
-.croatia {
-  top: 290px;
-  right: 250px;
-}
-
-.halk {
-  top: 410px;
-  left: 100px;
-}
-
-.makedonija {
-  top: 410px;
-  right: 100px;
-}
-
-.uniqa {
-  top: 530px;
-  right: 200px;
-}
-
-.triglav {
-  top: 530px;
-  left: 200px;
-}
-
-.ad {
-  top: 650px;
-  left: 300px;
-}
-
-.euroins {
-  top: 650px;
-  right: 300px;
-}
-
-.eurolink {
-  top: 650px;
-} */
 
 /* ------------- CESTO POSTAVUVANI PRASANJA--------------*/
 
@@ -909,6 +831,10 @@ article {
 .prasanja:hover {
   cursor: pointer;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.arrow-down {
+  text-align: right;
 }
 
 /* ---------------------- KONTAKT -------------------*/
@@ -1127,6 +1053,10 @@ footer {
   margin: auto 30px;
 }
 
+.banka-ime {
+  text-transform: uppercase;
+}
+
 .banka-smetka_container {
   display: flex;
 }
@@ -1157,7 +1087,7 @@ footer {
 
 .gray-background {
   background-color: var(--color-secondary);
-  padding-bottom: 500px;
+  padding-bottom: 450px;
 }
 
 .plakanje-nezivotno-second {
@@ -1312,11 +1242,6 @@ form {
 }
 
 @media only screen and (max-width: 1480px) {
-  /* .count-dogovori,
-  .count-premija {
-    font-size: 50px;
-  } */
-
   .slika-zgrada {
     margin: 20px auto;
     width: 450px;
@@ -1339,44 +1264,6 @@ form {
     height: 110px !important;
   }
 
-  /* .grawe {
-    top: 180px;
-    left: 320px;
-  }
-
-  .sava {
-    top: 180px;
-    right: 320px;
-  }
-  .viner {
-    left: 100px;
-  }
-
-  .croatia {
-    right: 100px;
-  }
-
-  .halk {
-    left: 20px;
-  }
-  .makedonija {
-    right: 20px;
-  }
-  .triglav {
-    left: 120px;
-  }
-
-  .uniqa {
-    right: 120px;
-  }
-
-  .ad {
-    left: 220px;
-  }
-
-  .euroins {
-    right: 220px;
-  } */
   .smetka,
   .banka {
     margin: auto 20px;
@@ -1462,18 +1349,9 @@ form {
     width: 105px;
   }
 
-  /* #partneri-nezivotno img {
-    width: 150px;
-    height: 70px;
-  } */
-
   .site-partneri {
     width: 90vw;
   }
-
-  /* .vfp-container {
-    margin-top: 120px;
-  } */
 
   .plakanje-btn {
     width: 120px;
@@ -1507,9 +1385,6 @@ form {
 }
 
 @media only screen and (max-width: 1140px) {
-  /* header {
-    padding: 10px 10px;
-  } */
   .link {
     font-size: 13px;
     padding: 12.8px 3px;
@@ -1627,7 +1502,7 @@ form {
     margin-bottom: 0;
   }
 
-  #main-uslugi .main-main {
+  #main-uslugi .main-container {
     width: 90%;
     margin: auto;
   }
@@ -1663,7 +1538,7 @@ form {
     margin-bottom: 0;
   }
 
-  #partneri-intro .main-main {
+  #partneri-intro .main-container {
     width: 90%;
     margin: auto;
   }
@@ -1671,17 +1546,9 @@ form {
     display: none;
   }
 
-  /* .float {
-    position: static;
-  } */
   .vfp-container {
     display: none;
   }
-
-  /* #partneri-nezivotno img {
-    height: 120px;
-    max-width: 360px;
-  } */
 
   .plakanje-btn {
     width: 120px;
@@ -1803,6 +1670,7 @@ form {
     display: flex;
     height: 80vh;
   }
+
   .privatno-zdravstveno-container {
     width: 100vw;
   }
@@ -1875,7 +1743,7 @@ form {
     width: 500px;
   }
 
-  .main-main {
+  .main-container {
     display: block;
     width: 90%;
   }
@@ -1907,12 +1775,17 @@ form {
   }
 
   .zivotno-items__button,
-  .nezivotno-items__button {
+  .nezivotno-items__button,
+  .plakanje-btn {
     transform: none;
     width: 100%;
     margin: 10px 0;
     font-size: 18px;
     height: 80px;
+  }
+
+  .uslugi-tab__aktive {
+    transform: none;
   }
 
   .uslugi-tekst__activ,
@@ -1921,6 +1794,7 @@ form {
     display: block;
     transform: translate(0);
     width: 90%;
+    border: 1px solid var(--color-primary);
   }
 
   .ikoni {
@@ -2065,10 +1939,6 @@ form {
     margin: 20px 5px;
   }
 
-  /* #partneri-nezivotno img {
-    width: 180px;
-  } */
-
   .plati-btn {
     width: 90%;
   }
@@ -2076,6 +1946,7 @@ form {
   #naslovna-uslugi {
     background-position: left;
   }
+
   .banka,
   .smetka {
     line-height: 10px;
